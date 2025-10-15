@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Your Name – Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body { font-family: system-ui, Arial, sans-serif; margin: 0; padding: 32px; line-height: 1.6; }
+    header { margin-bottom: 24px; }
+    h1 { margin: 0 0 8px; }
+    nav a { margin-right: 12px; text-decoration: none; color: #0366d6; }
+    section { margin: 32px 0; }
+    .card { border: 1px solid #ddd; border-radius: 8px; padding: 16px; margin: 12px 0; }
+    footer { margin-top: 40px; font-size: 14px; color: #666; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Your Name</h1>
+    <p>Short tagline about what you do.</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>One or two sentences about you. Keep it simple.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="card">
+      <strong>Project One</strong> — short description.
+      <div><a href="https://github.com/yourname/project-one" target="_blank">Code</a> · <a href="#" target="_blank">Demo</a></div>
+    </div>
+
+    <div class="card">
+      <strong>Project Two</strong> — short description.
+      <div><a href="https://github.com/yourname/project-two" target="_blank">Code</a> · <a href="#" target="_blank">Demo</a></div>
+    </div>
+
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:you@example.com">you@example.com</a> · LinkedIn: <a href="https://linkedin.com/in/yourname" target="_blank">@yourname</a></p>
+  </section>
+
+  <footer>
+    © <span id="y"></span> Your Name
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
